@@ -1,0 +1,1 @@
+/Users/merrill/workspace/rust_tutorial/final_project/hello/target/debug/main.dSYM: /Users/merrill/workspace/rust_tutorial/final_project/hello/src/bin/main.rs /Users/merrill/workspace/rust_tutorial/final_project/hello/src/lib.rs
