@@ -16,7 +16,7 @@ do
     rm $filename.txt
     echo "completed, sleeping"
     
-    sleep $(($RANDOM % 60 + 30))
+    sleep $(($RANDOM % 150 + 30))
     
 
 done
