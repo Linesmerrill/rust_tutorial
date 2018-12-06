@@ -7,7 +7,12 @@ do
     echo "filename: $filename"
     for ((j=1; j <=$filename; j++))
     do
-        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> $filename.txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j)).txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j+1000)).txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j+2000)).txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j+3000)).txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j+4000)).txt
+
     done
     git add .
     git commit -m "feature-$filename/fix"
