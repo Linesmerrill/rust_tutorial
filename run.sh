@@ -2,6 +2,7 @@
 
 for i in {1..100}
 do
+    mkdir temp
     echo "looping ... number $i"
     filename=$((RANDOM % 1234 + 30))
     echo "filename: $filename"
@@ -18,7 +19,7 @@ do
     git commit -m "feature-$filename/fix"
     git push
     echo "deleting file"
-    rm $filename.txt
+    rm -rf temp
     echo "completed, sleeping"
     
     sleep $(($RANDOM % 150 + 30))
