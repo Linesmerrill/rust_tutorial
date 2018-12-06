@@ -8,7 +8,7 @@ do
     for ((j=1; j <=$filename; j++))
     do
         echo "internal loop $j"
-        echo "$(($RANDOM % 60 + $RANDOM % 25505))" | tee -a $filename.txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> $filename.txt
     done
     git add .
     git commit -m "feature-$filename/fix"
