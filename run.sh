@@ -24,3 +24,7 @@ do
     
 
 done
+
+git add .
+git commit -m "feature/fix completed"
+git push
