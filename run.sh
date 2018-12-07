@@ -8,7 +8,10 @@ do
     echo "filename: $filename"
     for ((j=1; j <=$filename; j++))
     do
-        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j)).txt
+        for ((k=1; k <=$(($filename/10)); k++))
+        do
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))\n" >> temp/$(($filename + j)).txt
+        done
     done
     git add .
     git commit -m "feature-$filename/fix"
