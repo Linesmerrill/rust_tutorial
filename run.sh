@@ -21,8 +21,6 @@ do
     echo "completed, sleeping"
     
     sleep $(($RANDOM % 150 + 30))
-    
-
 done
 
 git add .
