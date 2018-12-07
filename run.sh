@@ -10,7 +10,7 @@ do
     do
         for ((k=1; k <=$(($filename/10)); k++))
         do
-        echo "$(($RANDOM % 60 + $RANDOM % 25505))\n" >> temp/$(($filename + j)).txt
+        echo "$(($RANDOM % 60 + $RANDOM % 25505))" >> temp/$(($filename + j)).txt
         done
     done
     git add .
